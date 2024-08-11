@@ -1,0 +1,84 @@
+.time-zone-converter {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.DateFormatter {
+  margin: auto;
+  border-style: solid;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.addtimeZoneContainer {
+  display: flex;
+  align-items: flex-start;
+  height: 55px;
+  justify-content: center;
+}
+
+.time-zone-converter h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions button {
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions select {
+  margin-right: 10px;
+}
+
+.setTimeZoneOptions {
+  padding: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 3px;
+}
+.dateAndZoneContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px;
+}
+@media (max-width: 786px) {
+  .DateFormatter {
+    font-size: 13px;
+  }
+  .time-zone-converter {
+    width: 89%;
+    margin: 0px;
+  }
+  .addtimeZoneContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .dateAndZoneContainer {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

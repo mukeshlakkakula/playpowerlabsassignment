@@ -1,0 +1,84 @@
+.time-zone-item {
+  min-height: 20vh;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: grab; /* Change cursor to indicate draggable */
+}
+
+.time-zone-item:active {
+  cursor: grabbing; /* Change cursor on drag */
+}
+
+.HourSlider {
+  width: 40vw;
+}
+
+.tmZone {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+  font-weight: bold;
+}
+
+option {
+  padding: 0;
+}
+
+.LabelName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.numberInput {
+  border-style: solid;
+
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.labelAndInputContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0;
+}
+
+.time-zone-item button {
+  background-color: #f4433600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 786px) {
+  .tmZone {
+    font-size: 13px;
+  }
+}
